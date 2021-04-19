@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-sections-container {
+    background-color: #293879;
+    height: 100vh;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.data-container {
+    width: 100%;
+}
+
+.sections-cancel-logo {
+    width: 18px;
+    margin-bottom: 10px;
+}
+
+.section-selected {
+    background-color: white;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 18px;
+    align-items: center;
+}
+
+.selected-section-name {
+    margin-bottom: 0px;
+    margin-left: 16px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.section-normal {
+    color: white;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 18px;
+    align-items: center;
+}
+
+.section-name {
+    margin-bottom: 0px;
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.checking-inside-container {
+    padding: 4px 10px 4px 10px;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-bg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 12vh;
+    background-color: #293879;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.sm-msg-img-dot-container {
+    position: relative;
+    margin-right: 12px;
+}
+
+.sm-dot {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    width: 9px;
+}
+
+.sm-pro-pic {
+    margin-left: 10px;
+    width: 40px;
+    border-radius: 6px;
+}
+
+.small-logo {
+    width: 26px;
+    margin-left: 10px;
+}
+
+.investor-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 6px;
+    border: 2px solid #006FFF1;
+    padding: 6px;
+}
+
+.save-money-small-logo-image-container {
+    width: 100%;
+    background-color: #293879;
+    padding: 4px;
+    margin-right: 6px;
+    border-radius: 3px;
+}
+
+.save-money-sm-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.back-logo {
+    width: 20px;
+    height: 10px;
+    margin-right: 12px;
+}
+
+.wallet-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wallet-name {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.investor-name {
+    color: #293879;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.wallet-investor-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 6px 12px 6px;
+    height: 10vh;
+    min-height: 50px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.checking-container-heading {
+    padding-left: 0px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 15px;
+    color: #292929;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.balance-info-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.balance-info-paragraph {
+    position: absolute;
+    top: 100px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+    z-index: 1;
+}
+
+.checking-savings-bg-container {
+    position: relative;
+}
+
+.payout-info-icon {
+    width: 14px;
+    margin-left: 4px;
+}
+
+.payout-info-paragraph {
+    position: absolute;
+    top: 140px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.account-credits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-break {
+    width: 100%;
+}
+
+.colon {
+    margin-left: 35px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid #E1E1E1;
+}
+
+.overview-style {
+    font-size: 14px;
+    font-weight: Bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #293879;
+    margin-bottom: 0px;
+}
+
+.savings-style {
+    padding-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.investment-style {
+    padding-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.value {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.checking-card {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.checking-card-heading {
+    background-color: #006FFF29;
+    font-weight: 500;
+    color: #293879;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.qr-code-img {
+    width: 150px;
+}
+
+.qr-code-container {
+    position: absolute;
+    background-color: white;
+    top: 100px;
+    left: 50%;
+    border-radius: 10px;
+    align-self: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.checking-card-content {
+    padding: 15px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-coins {
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.btn-buy {
+    color: white;
+    background-color: #293879;
+    border: none;
+    padding: 4px 35px 4px 35px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.sm-assets-heading {
+    color: black;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-align: center;
+}
+
+.assets-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    text-align: center;
+    margin-top: 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding: 4px 4px 4px 4px;
+}
+
+.assets-card:hover {
+    background-color: #d6d6d6;
+}
+
+.assets-card-container {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.asset-card-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profit-icon {
+    margin-left: 8px;
+}
+
+.asset-content {
+    color: #bababa;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.asset-description {
+    color: #bababa;
+    font-size: 12px;
+}
+
+.Recent-transactions-container {
+    padding: 10px;
+}
+
+.transaction-card {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.transaction-card-subcontainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+    color: #707070;
+}
+
+.name-style {
+    width: 35%;
+    font-weight: 500;
+}
+
+.colon-style {
+    width: 5%;
+}
+
+.content-style {
+    width: 60%;
+}
+
+.money-style {
+    color: #05CF5B;
+    width: 60%;
+    font-weight: 500;
+}
+
+.divident-style {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.footer-sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.view-more-sm {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: #293879;
+}
+
+.rejolut-logo-sm {
+    width: 40px;
+
+}
+
+.sm-profile-options-container {
+    width: 100%;
+    padding: 10px;
+}
+
+.sm-profile-close-icon-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sm-profile-close-icon {
+    width: 16px;
+}
+
+.sm-profile-option-icon {
+    width: 20px;
+    margin-right: 30px;
+}
+
+.sm-profile-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    color: #707070;
+}
+
+.borders {
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+.sm-profile-name {
+    margin-bottom: 0px;
+
+}
+
+.bg-profile-sections-container {
+    display: none;
+}
+
+.lg-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width:767px) {
+    .checking-container {
+        height: 75vh;
+        overflow-y: scroll;
+    }
+
+    .checking-container::-webkit-scrollbar {
+        width: 4px;
+        /* width of the entire scrollbar */
+    }
+
+    .checking-container::-webkit-scrollbar-track {
+        background: transparent;
+        /* color of the tracking area */
+    }
+
+    .checking-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        /* color of the scroll thumb */
+        border-radius: 20px;
+        /* roundness of the scroll thumb */
+    }
+}
+
+@media(min-width:768px) {
+    .main-container {
+        height: 100vh;
+        background-color: #293879;
+        padding: 20px 20px 20px 0px;
+
+    }
+
+    .main-container::-webkit-scrollbar {
+        width: 4px;
+        /* width of the entire scrollbar */
+    }
+
+    .main-container::-webkit-scrollbar-track {
+        background: transparent;
+        /* color of the tracking area */
+    }
+
+    .main-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        /* color of the scroll thumb */
+        border-radius: 20px;
+        /* roundness of the scroll thumb */
+    }
+
+    .main-sections-container {
+        width: 20%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main-section-sub-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .warning-container {
+        position: relative;
+        margin-top: 20%;
+        padding-top: 40px;
+    }
+
+    .warning-content-container {
+        color: white;
+        background-color: #1C2964;
+        display: flex;
+        flex-direction: column;
+        padding: 22px;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .warning-icon {
+        position: absolute;
+        width: 40px;
+        top: 20px;
+        align-self: center;
+    }
+
+    .warning-cancel-icon {
+        width: 15px;
+    }
+
+
+    .warning-msg {
+        font-size: 12px;
+    }
+
+    .lg-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-right: 5px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #717171;
+        margin-bottom: 30px;
+    }
+
+    .heading-section {
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 2px solid #E1E1E1;
+    }
+
+    .sections {
+        margin-bottom: 0px;
+        border: none;
+    }
+
+    .overview-style {
+        margin-right: 18px;
+        padding-bottom: 20px;
+    }
+
+    .savings-style {
+        margin-right: 18px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: #717171;
+    }
+
+    .investment-style {
+        margin-right: 18px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: #717171;
+    }
+
+    .bg-msg-image {
+        width: 20px;
+        margin-right: 14px;
+    }
+
+    .bg-profile-sections-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 4px;
+    }
+
+    .gap {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 20px;
+        color: #d6d6d6;
+    }
+
+    .lg-profile-details-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lg-profile-image {
+        width: 40px;
+        border-radius: 8px;
+    }
+
+    .profile-name {
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+    .lg-nav-to-profile {
+        width: 20px;
+    }
+
+    .lg-profile-card {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        width: 180px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .data-container {
+        padding: 5px 20px 20px 0px;
+        background-color: white;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+
+    .data-container::-webkit-scrollbar {
+        width: 4px;
+        /* width of the entire scrollbar */
+    }
+
+    .data-container::-webkit-scrollbar-track {
+        background: transparent;
+        /* color of the tracking area */
+    }
+
+    .data-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        /* color of the scroll thumb */
+        border-radius: 20px;
+        /* roundness of the scroll thumb */
+    }
+
+    .checking-card-content {
+        padding: 8px 6px 4px 10px;
+        font-family: "Open Sans";
+    }
+
+    .checking-container {
+        padding: 0px 10px 4px 15px;
+    }
+
+    .checking-inside-container {
+        width: 100%;
+    }
+
+    .checking-card {
+        width: 100%;
+        height: 150px;
+        padding-top: 0px;
+    }
+
+    .checking-card-small {
+        height: 120px;
+    }
+
+    .checkings-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .checking-savings-bg-container {
+        width: 48%;
+        margin-right: 1%;
+    }
+
+    .checking-container-heading {
+        width: 50%;
+    }
+
+    .accounts-card-container {
+        position: relative;
+    }
+
+    .qr-code-container {
+        position: absolute;
+        top: 50px;
+    }
+
+    .checking-card-heading {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    .account-credits {
+        width: 100%;
+    }
+
+    .checking-card-description {
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 4px;
+        margin-top: 0px;
+        color: #717171;
+    }
+
+    .colon {
+        width: 5%;
+        color: #717171;
+    }
+
+    .value {
+        font-weight: bold;
+        width: 30%;
+        color: #2B2B2B;
+    }
+
+    .buttons-container {
+        width: 96%;
+        margin-top: 0px;
+    }
+
+    .btn-buy {
+        padding-left: 7%;
+        height: 28px;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    .select-coins {
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .sell-buy-coins {
+        margin-top: 10px;
+        margin-bottom: 3px;
+        font-size: 13px;
+        color: #717171;
+        font-weight: bold;
+    }
+
+    .section-body-container {
+        flex-shrink: 1;
+        overflow-y: auto;
+    }
+
+    .assets-container {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .assets-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        max-height: 20%;
+        padding: 1px 1px 1px 1px;
+        margin-bottom: 4px;
+    }
+
+    .view-more-sm {
+        font-size: 13px;
+        margin-right: 20px;
+    }
+
+    .sm-assets-heading {
+        text-align: left;
+        font-size: 14px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .asset-card-heading {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .asset-content {
+        margin-bottom: 8px;
+    }
+
+    .asset-image {
+        width: 110px;
+    }
+
+    .lg-view-more-container {
+        text-align: right;
+    }
+
+    .lg-rejolut-logo-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    .lg-rejolut-logo {
+        width: 50px;
+    }
+
+    .section-body-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .overall-accounts-container {
+        max-width: 55%;
+        margin-right: 10px;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    .contributions {
+        margin-right: 10px;
+
+    }
+
+    .Recent-transactions-container-heading {
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .transactions-headings-container {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #d6d6d6;
+        padding-bottom: 3px;
+    }
+
+    .transaction-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .md-date {
+        width: 20%;
+        color: #717171;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .md-transaction {
+        width: 60%;
+        color: #717171;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .transaction-type {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 13px;
+    }
+
+    .md-amount {
+        width: 20%;
+        color: #717171;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .md-amount-positive {
+        width: 20%;
+        color: #05CF5B;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .accounts-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .assets-float-right {
+        flex-shrink: 1;
+        max-width: 45%;
+        padding: 4px;
+    }
+}
+
+@media(min-width:768px) and (max-width:900px) {
+
+    .warning-msg {
+        font-size: 11px;
+    }
+
+    .assets-card {
+        max-height: 16%;
+    }
+
+    .asset-image {
+        width: 100px;
+    }
+
+
+    .asset-card-heading {
+        font-size: 13px;
+    }
+
+    .asset-content {
+        font-size: 11px;
+    }
+
+    .asset-description {
+        font-size: 11px;
+    }
+
+    .md-date,
+    .md-transaction,
+    .md-amount,
+    .md-amount-positive {
+        font-size: 13px;
+    }
+
+    .section-normal,
+    .section-selected {
+        padding-left: 2px;
+    }
+
+    .warning-container {
+        margin-top: 0px;
+        padding-bottom: 2px;
+    }
+
+    .warning-msg {
+        font-size: 10px;
+        padding: 2px 2px 2px 2px;
+    }
+}
